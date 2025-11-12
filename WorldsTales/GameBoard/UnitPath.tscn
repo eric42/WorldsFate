@@ -1,0 +1,18 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://GameBoard/unit_path_tileset.tres" type="TileSet" id=1]
+[ext_resource path="res://GameBoard/UnitPath.gd" type="Script" id=2]
+[ext_resource path="res://GameBoard/Grid.gd" type="Script" id=3]
+
+[sub_resource type="Resource" id=1]
+script = ExtResource( 3 )
+size = Vector2( 20, 20 )
+cell_size = Vector2( 80, 80 )
+
+[node name="TileMap" type="TileMap"]
+tile_set = ExtResource( 1 )
+cell_size = Vector2( 80, 80 )
+format = 1
+tile_data = PoolIntArray( 65539, 0, 131075, 65540, 0, 1, 65541, 0, 65539 )
+script = ExtResource( 2 )
+grid = SubResource( 1 )

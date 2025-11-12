@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://UnitOverlay/UnitOverlay.gd" type="Script" id=1]
+
+[node name="UnitOverlay" type="TileMap"]
+modulate = Color( 1, 1, 1, 0.356863 )
+cell_size = Vector2( 80, 80 )
+format = 1
+script = ExtResource( 1 )
